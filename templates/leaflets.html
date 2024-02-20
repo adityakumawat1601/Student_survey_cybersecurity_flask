@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Usage Survey</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .question {
+      margin-bottom: 16px;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      position: relative;
+      left: 100px;
+      top:15px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .leaflet {
+      background-color: #f8f8f8;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+
+</head>
+<body>
+
+  <form action="/doughnuts" method="post">
+ <div class="leaflet">
+    <h3>Password Tips</h3>
+    <p>Ensure the security of your accounts with strong passwords! Here are some tips:</p>
+    <ul>
+      <li>Use a unique password for each website</li>
+      <li>Include a mix of letters, numbers, and symbols</li>
+      <li>Change passwords regularly</li>
+      <li>Consider using a password manager</li>
+    </ul>
+    <p>Submit the survey and enjoy free doughnuts as a token of appreciation!</p>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

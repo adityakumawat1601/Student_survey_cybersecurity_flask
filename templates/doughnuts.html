@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Doughnuts</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      max-width: 60%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .doughnut-count {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .info {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <img src="{{ url_for('static', filename='doughnuts.jpg') }}" alt="Doughnuts Image">
+    <h2>Claim Your Free Doughnuts!</h2>
+
+    <p>Congratulations! You have earned <span class="doughnut-count">{{ totalDoughnuts }}</span> free doughnuts.</p>
+    
+    <div class="info">
+      <p>Enjoy your doughnuts and remember to keep your passwords secure!</p>
+    </div>
+  </div>
+</body>
+</html>
